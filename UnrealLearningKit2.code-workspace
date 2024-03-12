@@ -1,0 +1,614 @@
+{
+	"folders": [
+		{
+			"name": "UnrealLearningKit2",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\Program Files\\Epic Games\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"git.ignoreLimitWarning": true
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "UnrealLearningKit2 Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Debug",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Debug",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2 Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Debug",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2 Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Development",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Development",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2 Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Development",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Test",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Test",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2 Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Test",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2 Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2 Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2Editor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2Editor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"Development",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"Development",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit2Editor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealLearningKit2Editor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealLearningKit2Editor",
+					"Win64",
+					"Development",
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch UnrealLearningKit2 (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "UnrealLearningKit2 Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealLearningKit2 (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "UnrealLearningKit2 Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealLearningKit2 (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "UnrealLearningKit2 Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealLearningKit2 (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "UnrealLearningKit2 Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealLearningKit2 (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "UnrealLearningKit2 Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealLearningKit2Editor (Debug)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "UnrealLearningKit2Editor Win64 Debug Build",
+				"args": [
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealLearningKit2Editor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "UnrealLearningKit2Editor Win64 DebugGame Build",
+				"args": [
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealLearningKit2Editor (Development)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "UnrealLearningKit2Editor Win64 Development Build",
+				"args": [
+					"C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Users\\trepv\\OneDrive\\Documents\\Unreal Projects\\UnrealLearningKit2\\UnrealLearningKit2.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.3"
+			}
+		]
+	}
+}
